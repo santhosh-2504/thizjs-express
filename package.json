@@ -1,0 +1,53 @@
+{
+  "name": "@thizjs/express",
+  "version": "1.0.0",
+  "description": "File-based routing and convention-based middleware for Express — the backbone of THIZ.js",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Santhosh Kumar Anantha",
+    "url": "https://github.com/santhosh-2504"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santhosh-2504/thizjs-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/santhosh-2504/thizjs-express/issues"
+  },
+  "homepage": "https://github.com/santhosh-2504/thizjs-express#readme",
+  "keywords": [
+    "thiz",
+    "thizjs",
+    "express",
+    "routing",
+    "file-based-routing",
+    "middleware",
+    "typescript",
+    "backend",
+    "framework",
+    "api",
+    "rest"
+  ],
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "express": "^4.0.0 || ^5.0.0"
+  },
+  "peerDependenciesMeta": {
+    "tsx": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0"
+  }
+}
