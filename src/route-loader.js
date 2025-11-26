@@ -184,10 +184,7 @@ Both resolve to: [${method.toUpperCase()}] ${routePath}
         const fileType = fileExt === "ts" ? "TS" : "JS";
         const mwCount = middlewares.length;
         const mwInfo = mwCount > 0 ? ` [${mwCount} middleware${mwCount > 1 ? 's' : ''}]` : '';
-        
-        console.log(
-          `Loaded route: [${method.toUpperCase()}] ${routePath} (${fileType})${mwInfo}`
-        );
+
       } catch (error) {
         console.error(`Failed to load route: ${fullPath}`);
         throw error;

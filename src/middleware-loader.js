@@ -54,7 +54,6 @@ export class MiddlewareLoader {
     if (this.loaded) return;
 
     if (!this.hasMiddlewaresDir()) {
-      console.log("No middlewares directory found. Skipping middleware loading.");
       this.loaded = true;
       return;
     }
@@ -96,9 +95,6 @@ export class MiddlewareLoader {
             name: middlewareName,
             fn: middleware,
           });
-          console.log(`Loaded global middleware: ${middlewareName}`);
-        } else {
-          console.log(`Loaded middleware: ${middlewareName}`);
         }
       } catch (error) {
         console.error(`Failed to load middleware '${file}':`, error.message);
